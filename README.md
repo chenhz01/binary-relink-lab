@@ -4,6 +4,8 @@ Generic, format-level ELF64 ABI tooling implementing the *relink, don't emulate*
 
 **Confidence: High (80%)** that symbol-level abidiff + relocmap covers the first decision layer of any relink project; the execution layer (actually rewriting relocations) is out of scope.
 
+<p align="center"><img src="docs/demo.gif" alt="demo" width="720"></p>
+
 ## Problem
 
 Emulation is the default answer to "run this binary elsewhere," but it burns 3-10x runtime overhead for a problem that is often static: references just need re-pointing.
